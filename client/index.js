@@ -2,6 +2,7 @@ console.log('so fetch!')
 
 // GET Lesson:
 // 1. Make a GET request to get all of the users for a given resource, and log those items to the console.
+fetch('http://localhost:3001/api/v1/users').then(response => response.json()).then(data=>{console.log(data)}).catch(err=>console.log(err));
 // 2. Make a GET request to get all of the animals for a given resource, and log those items to the console.
 // 3. Make a GET request to get all of the sports items for a given resource, and log those items to the console.
 // 4. Let's hook it up to the DOM! On page load, fire off #1 from above and populate the section (.js-collection) with those items.
